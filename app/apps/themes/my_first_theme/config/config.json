@@ -1,0 +1,14 @@
+{
+  "name" : "My First Theme",
+  "description" : "",
+  "thumb" : "images/image.png",
+  "helpers": [
+    "Themes::MyFirstTheme::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["my_first_theme_on_install_theme"],
+    "on_inactive": ["my_first_theme_on_uninstall_theme"],
+    "on_theme_settings": ["my_first_theme_settings"]
+    //here all your hooks
+  }
+}

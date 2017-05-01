@@ -13,6 +13,8 @@
     rake db:create
     rake db:migrate
 
-#### To Create New Site
-##### ***On Staging***
-Please, go to this link: [Well Web Staging](http://weellweb.rotati.com/admin). **Username**: admin, **Password**: 123
+##### ***Addmin page***
+**Username**: admin, **Password**: admin123
+
+**To generate new theme
+  rails generate camaleon_cms:theme theme-name

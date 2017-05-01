@@ -1,14 +1,14 @@
-module Themes::Ccca::MainHelper
+module Themes::MyFirstTheme::MainHelper
   def self.included(klass)
     # klass.helper_method [:my_helper_method] rescue "" # here your methods accessible from views
   end
 
-  def ccca_settings(theme)
+  def my_first_theme_settings(theme)
     # callback to save custom values of fields added in my_theme/views/admin/settings.html.erb
   end
 
   # callback called after theme installed
-  def ccca_on_install_theme(theme)
+  def my_first_theme_on_install_theme(theme)
     # # Sample Custom Field
     # unless theme.get_field_groups.where(slug: "fields").any?
     #   group = theme.add_field_group({name: "Main Settings", slug: "fields", description: ""})
@@ -22,6 +22,6 @@ module Themes::Ccca::MainHelper
   end
 
   # callback executed after theme uninstalled
-  def ccca_on_uninstall_theme(theme)
+  def my_first_theme_on_uninstall_theme(theme)
   end
 end
