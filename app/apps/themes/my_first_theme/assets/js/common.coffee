@@ -2,6 +2,7 @@ MYCMS.Common = do ->
   _init = ->
     _navbarToggle()
     _scrollToTop()
+    _addClassyLeave()
 
   _navbarToggle = ->
     $('ul.dropdown-menu.submenu-dropdown [data-toggle=dropdown]').on 'click', (e) ->
@@ -22,5 +23,18 @@ MYCMS.Common = do ->
       $('body,html').animate { scrollTop: 0 }, 800
 
     $('#back-to-top').tooltip 'show'
+
+  _addClassyLeave = ->
+    tree = new ClassyLeaves(
+      leaves: 30
+      maxY: -10
+      multiplyOnClick: true
+      multiply: 2
+      infinite: true
+      speed: 4000)
+    $('body').on 'click', '.addLeaf', ->
+      console.log '8'
+      tree.add 8
+      false
 
   { init: _init }

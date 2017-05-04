@@ -111,9 +111,9 @@ nav#main-menu {
     }
     @media #{$tablet-up} {
       #main-menu-ul > li {
-        border-right: 1px solid $dark-aquamarine-active;
+        border-right: 1px solid #ffffff;
         &:first-child {
-          border-left: 1px solid $dark-aquamarine-active;
+          border-left: 1px solid #ffffff;
         }
       }
     }
