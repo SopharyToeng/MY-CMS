@@ -11,11 +11,11 @@
               - contact_us = current_site.the_post('contact-us')
               %li
                 = link_to contact_us.the_title, contact_us.the_url
-            -# %li
-            -#   = link_to ccca_language('km'), class: 'km-flag-link' do
-            -#     = image_tag theme_asset_url('images/flags/km.png'), class: 'km-flag'
-            -#   = link_to ccca_language('en'), class: 'en-flag-link' do
-            -#     = image_tag theme_asset_url('images/flags/en.png'), class: 'en-flag'
+            %li
+              = link_to mycms_language('km'), class: 'km-flag-link' do
+                = image_tag theme_asset_url('images/flags/km.png'), class: 'km-flag'
+              = link_to mycms_language('en'), class: 'en-flag-link' do
+                = image_tag theme_asset_url('images/flags/en.png'), class: 'en-flag'
         .col-xs-12.col-sm-12
           .navbar-header
             %button.navbar-toggle{"data-target": "#navbar-main", "data-toggle": "collapse", type: "button", class: 'mobile-menu' }

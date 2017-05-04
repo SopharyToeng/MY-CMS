@@ -3,7 +3,8 @@
   "description" : "",
   "thumb" : "images/image.png",
   "helpers": [
-    "Themes::MyFirstTheme::MainHelper"
+    "Themes::MyFirstTheme::MainHelper",
+    "Themes::MyFirstTheme::LanguageHelper"
   ],
   "hooks": {
     "on_active": ["my_first_theme_on_install_theme"],
