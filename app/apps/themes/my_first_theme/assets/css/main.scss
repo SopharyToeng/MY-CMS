@@ -1,0 +1,19 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome';
+@import 'bourbon';
+@import 'helpers/_variable';
+
+@import 'partials/_footer';
+@import 'partials/_navbar';
+
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+
+  #content-wrapper {
+    min-height: 70%;
+    position: relative;
+  }
+}

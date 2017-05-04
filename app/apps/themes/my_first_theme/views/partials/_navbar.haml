@@ -1,0 +1,30 @@
+%nav.navbar.navbar-default#main-menu
+  .logo-section
+    .container
+      .row
+        .col-xs-12.col-sm-6
+          = link_to current_site.the_url, class: 'logo-link' do
+            = image_tag current_site.the_logo, class: 'img-responsive img-logo'
+        .col-xs-12.col-sm-6
+          %ol.breadcrumb.right-sub-main-menu
+            - if current_site.the_post('contact-us').present?
+              - contact_us = current_site.the_post('contact-us')
+              %li
+                = link_to contact_us.the_title, contact_us.the_url
+            -# %li
+            -#   = link_to ccca_language('km'), class: 'km-flag-link' do
+            -#     = image_tag theme_asset_url('images/flags/km.png'), class: 'km-flag'
+            -#   = link_to ccca_language('en'), class: 'en-flag-link' do
+            -#     = image_tag theme_asset_url('images/flags/en.png'), class: 'en-flag'
+        .col-xs-12.col-sm-12
+          .navbar-header
+            %button.navbar-toggle{"data-target": "#navbar-main", "data-toggle": "collapse", type: "button", class: 'mobile-menu' }
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+  .menu-section
+    #navbar-main.navbar-collapse.collapse
+      .container
+        .row
+          .col-xs-12.custom-menu
+            = raw ccca_get_nav_menu('main_menu', 'nav navbar-nav navbar-main navbar-right')
