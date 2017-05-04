@@ -1,0 +1,10 @@
+%section#page-500
+  .container
+    .row
+      .col-xs-12
+        = image_tag theme_asset('images/mycms_logo.jpg'), class: 'img-responsive img-center'
+      .col-xs-12
+        %h3.text-uppercase Something has gone wrong
+        %p.text-uppercase.text-muted We're experiance an internal server error please try again later
+      .col-xs-12.text-center
+        = link_to 'Go To Home Page', current_site.the_url, class: 'btn-home'

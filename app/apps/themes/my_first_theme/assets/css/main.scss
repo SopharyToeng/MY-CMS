@@ -4,8 +4,11 @@
 @import 'bourbon';
 @import 'helpers/_variable';
 
+@import 'errors/_page_errors';
+
 @import 'partials/_footer';
 @import 'partials/_navbar';
+
 
 
 html, body {

@@ -1,0 +1,27 @@
+@import 'bourbon';
+
+section#page-404, section#page-500{
+  height: 450px;
+  .title{
+    font-weight: bold;
+    color: #777;
+    @include padding(null null 20px null);
+    @include margin(0 null null null);
+  }
+  .img-center{
+    @include margin(40px auto null);
+  }
+  .btn-home{
+    @include border-width(1px);
+    @include border-style(solid);
+    @include border-color(#00695c);
+    @include padding(20px);
+    border-radius: 50%;
+    color: #777;
+    &:hover{
+      text-decoration: none;
+      background-color: #01866f;
+      color: #ffffff;
+    }
+  }
+}

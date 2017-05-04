@@ -1,0 +1,9 @@
+%section#page-404
+  .container
+    .row
+      .col-xs-12
+        = image_tag theme_asset('images/mycms_logo.jpg'), class: 'img-responsive img-center'
+      .col-xs-12
+        %h1.text-center.title Page Not Found
+      .col-xs-12.text-center
+        = link_to 'Go To Home Page', current_site.the_url, class: 'btn-home'
