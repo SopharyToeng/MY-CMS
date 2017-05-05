@@ -12,6 +12,7 @@
         -#       = fa_icon 'play-circle-o'
   %section#contact
     .container
+      %h3.text-center I'm using Scroll Reveal.
       - contact_list = current_site.the_post_type('contact')
       - contact_list.the_posts.visible_frontend.decorate.each do |contact|
         .row.contact-blog
@@ -25,4 +26,7 @@
             .email
               %p= contact.the_field('e-mail')
   %section#masonary
-    %p This project also using masonary. Do it later!
+    .container
+      .row
+        %p.text-center
+          ****This project also using masonary. Do it later!****

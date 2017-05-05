@@ -1,15 +1,17 @@
 %section#project2
   .container
     .row
-      - contact_list = current_site.the_post_type('contact')
-      - contact_list.the_posts.visible_frontend.decorate.each do |contact|
-        .col-xs-4
-          .ih-item.circle.effect11.top_to_bottom
-            %a{:href => "#"}
-              .img
-                = image_tag contact.the_field('image')
-              .info
-                %h3
-                  Toeng Sophary
-                %p
-                  I'm a web developer.
+      -# %h3.text-center I'm using ihover. It's nice effect and use only css. Great! :)
+      - 2.times do
+        - contact_list = current_site.the_post_type('contact')
+        - contact_list.the_posts.visible_frontend.decorate.each do |contact|
+          .col-xs-12.text-center.col-sm-6.col-md-3
+            .ih-item.circle.effect11.top_to_bottom.ihover
+              %a{:href => "#"}
+                .img
+                  = image_tag contact.the_field('image'), class: 'img-responsive'
+                .info
+                  %h3
+                    Toeng Sophary
+                  %p
+                    I'm a web developer.

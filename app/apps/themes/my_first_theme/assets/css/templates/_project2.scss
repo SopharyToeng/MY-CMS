@@ -1,0 +1,8 @@
+@import 'bourbon';
+@import '../helpers/_variable';
+
+section#project2 {
+  .ihover {
+    @include margin(15px);
+  }
+}

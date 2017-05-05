@@ -11,6 +11,7 @@
 @import 'partials/_parallex';
 
 @import 'templates/_project1';
+@import 'templates/_project2';
 
 @import 'plugins/_classyleaves.min';
 @import 'plugins/_ihover.min';
@@ -22,5 +23,6 @@ html, body {
   #content-wrapper {
     min-height: 70%;
     position: relative;
+    @include margin(20px null null null);
   }
 }
