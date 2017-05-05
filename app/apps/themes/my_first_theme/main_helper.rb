@@ -44,7 +44,7 @@ module Themes::MyFirstTheme::MainHelper
   def mycms_add_default_pages
     page_post_type = current_site.the_post_type('page')
     if page_post_type.present?
-      pages = ['Home','Project 1']
+      pages = ['Home','Project 1', 'Project 2']
 
       pages.each do |page|
         formatted_page = page.downcase.parameterize

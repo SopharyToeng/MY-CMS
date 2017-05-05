@@ -12,9 +12,8 @@
 
 @import 'templates/_project1';
 
-@import 'plugins/classyleaves.min';
-
-
+@import 'plugins/_classyleaves.min';
+@import 'plugins/_ihover.min';
 
 html, body {
   height: 100%;
