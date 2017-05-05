@@ -1,0 +1,32 @@
+@import 'bourbon';
+@import '../helpers/_variable';
+
+section#slider {
+  .parallax{
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    @media #{$desktop-up}{
+      background-attachment: fixed !important;
+    }
+    .prallax-text {
+      padding: 15em 0;
+      @media #{$phone} {
+        padding: 5em 0;
+      }
+      text-align: center;
+      color: #ffffff;
+      h1 {
+        font-weight: lighter;
+        @media #{$phone} {
+          font-size: 20px;
+          padding: 0 2em;
+        }
+      }
+      a {
+        font-size: 120px;
+        color: $green-leave;
+      }
+    }
+  }
+}

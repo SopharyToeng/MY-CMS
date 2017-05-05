@@ -46,7 +46,7 @@ nav#main-menu {
         }
         a {
           text-decoration: none;
-          color: $dark-aquamarine-active;
+          color: $dark-green-leave;
         }
       }
       .km-flag-link,
@@ -63,7 +63,7 @@ nav#main-menu {
         width: 100%;
         height: 40px;
         @include margin(null 0 null null);
-        background-color: $dark-aquamarine;
+        background-color: $green-leave;
         border: none;
         .icon-bar {
           background-color: #fff;
@@ -102,10 +102,10 @@ nav#main-menu {
   }
 
   #navbar-main {
-    background-color: $dark-aquamarine;
+    background-color: $green-leave;
     @media (max-width: 768px) {
       #main-menu-ul > li {
-        background-color: $dark-aquamarine-active;
+        background-color: $dark-green-leave;
         @include margin(null null 5px null);
       }
     }
@@ -156,20 +156,20 @@ nav#main-menu {
     li.current-menu-item,
     .current-menu-ancestor {
       a {
-        background-color: $dark-aquamarine-active;
+        background-color: $dark-green-leave;
         @media #{$phone} {
           white-space: inherit;
         }
         &:hover,
         &:focus {
-          background-color: $dark-aquamarine-active;
+          background-color: $dark-green-leave;
           &:before {
             @media (max-width: 768px) {
               content: "";
               @include position(absolute, null null 0 null);
               height: 1px;
               width: 90%;
-              border-bottom: 1px solid $dark-aquamarine;
+              border-bottom: 1px solid $green-leave;
             }
           }
         }
@@ -194,7 +194,7 @@ nav#main-menu {
       ul.dropdown-menu,
       &:hover,
       &:focus {
-        background-color: $dark-aquamarine-active;
+        background-color: $dark-green-leave;
         border: none;
       }
     }
