@@ -1,0 +1,17 @@
+@import 'bourbon';
+@import '../helpers/_variable';
+
+section#project1 {
+  section#contact {
+    .contact-blog {
+      border-bottom: 1px solid rgba(170,170,170,0.3);
+      @include padding(15px);
+      &:last-child {
+        border: none;
+      }
+      .positon p{
+        color: #aaa;
+      }
+    }
+  }
+}

@@ -14,8 +14,15 @@
     .container
       - contact_list = current_site.the_post_type('contact')
       - contact_list.the_posts.visible_frontend.decorate.each do |contact|
-        .row
+        .row.contact-blog
           .col-xs-3
             = image_tag contact.the_field('image'), class: 'img-responsive contact-image'
           .col-xs-9
-            = contact.the_field('name')
+            .name
+              %h4= contact.the_field('name')
+            .positon
+              %p= contact.the_field('position')
+            .email
+              %p= contact.the_field('e-mail')
+  %section#masonary
+    %p This project also using masonary. Do it later!
