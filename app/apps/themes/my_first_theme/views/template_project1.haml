@@ -1,11 +1,21 @@
-%section#slider
-  .parallax{ style: "background: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)), url(#{theme_asset_url('images/office.jpg')})" }
-    .prallax-text
-      %h1 Startup Your Software Developer Career
-      %br/
-      .video.hidden-xs
-        %script{ async: '', src: 'https://fast.wistia.com/embed/medias/c0k9el7xk1.jsonp' }
-        %script{ async: '', src: 'https://fast.wistia.com/assets/external/E-v1.js' }
-        %span.wistia_embed.wistia_async_c0k9el7xk1{ class: 'popover=true popoverContent=link', style: 'display:inline' }
-          = link_to '#' do
-            = fa_icon 'play-circle-o'
+%section#project1
+  %section#slider
+    .parallax{ style: "background: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)), url(#{theme_asset_url('images/office.jpg')})" }
+      .prallax-text
+        %h1 Startup Your Software Developer Career
+        %br/
+        -# .video.hidden-xs
+        -#   %script{ async: '', src: 'https://fast.wistia.com/embed/medias/c0k9el7xk1.jsonp' }
+        -#   %script{ async: '', src: 'https://fast.wistia.com/assets/external/E-v1.js' }
+        -#   %span.wistia_embed.wistia_async_c0k9el7xk1{ class: 'popover=true popoverContent=link', style: 'display:inline' }
+        -#     = link_to '#' do
+        -#       = fa_icon 'play-circle-o'
+  %section#contact
+    .container
+      - contact_list = current_site.the_post_type('contact')
+      - contact_list.the_posts.visible_frontend.decorate.each do |contact|
+        .row
+          .col-xs-3
+            = image_tag contact.the_field('image'), class: 'img-responsive contact-image'
+          .col-xs-9
+            = contact.the_field('name')
