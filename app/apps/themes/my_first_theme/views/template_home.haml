@@ -1,5 +1,12 @@
 %section#home
-  .container
-    .row
-      .col-xs-12.text-center
-        %h1 Welcome
+  %section#slider
+    .parallax{ style: "background: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)), url(#{theme_asset_url('images/office.jpg')})" }
+      .prallax-text
+        %h1 Start Your Dream
+        %br/
+        -# .video.hidden-xs
+        -#   %script{ async: '', src: 'https://fast.wistia.com/embed/medias/c0k9el7xk1.jsonp' }
+        -#   %script{ async: '', src: 'https://fast.wistia.com/assets/external/E-v1.js' }
+        -#   %span.wistia_embed.wistia_async_c0k9el7xk1{ class: 'popover=true popoverContent=link', style: 'display:inline' }
+        -#     = link_to '#' do
+        -#       = fa_icon 'play-circle-o'
