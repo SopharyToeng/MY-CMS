@@ -45,6 +45,8 @@ end
 
 group :production, :staging do
   gem 'appsignal',  '~> 2.1', '>= 2.1.1'
+  gem 'asset_sync', '~> 2.0'
+  gem 'fog-aws',    '~> 1.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
